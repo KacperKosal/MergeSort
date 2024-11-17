@@ -46,3 +46,11 @@ void MergeSort::merge(std::vector<int>& arr, int left, int right) {
         arr[i] = temp[k];
     }
 }
+void MergeSort::mergeSort(std::vector<int>& arr, int left, int right) {
+    if (left < right) {
+        int mid = left + (right - left) / 2;
+        mergeSort(arr, left, mid);
+        mergeSort(arr, mid + 1, right);
+        merge(arr, left, right);
+    }
+}
