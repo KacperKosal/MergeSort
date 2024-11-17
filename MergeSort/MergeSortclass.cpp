@@ -47,10 +47,19 @@ void MergeSort::merge(std::vector<int>& arr, int left, int right) {
     }
 }
 void MergeSort::mergeSort(std::vector<int>& arr, int left, int right) {
+    // Sprawdzamy, czy lewy indeks jest mniejszy ni¿ prawy,
+    // co oznacza, ¿e mamy do czynienia z tablic¹ o co najmniej dwóch elementach
     if (left < right) {
+        // Obliczamy punkt œrodkowy tablicy
         int mid = left + (right - left) / 2;
+
+        // Rekurencyjnie wywo³ujemy mergeSort na lewej po³owie tablicy
         mergeSort(arr, left, mid);
+
+        // Rekurencyjnie wywo³ujemy mergeSort na prawej po³owie tablicy
         mergeSort(arr, mid + 1, right);
+
+        // Po posortowaniu obu po³ówek, scalamy je w jedn¹ posortowan¹ tablicê
         merge(arr, left, right);
     }
 }
