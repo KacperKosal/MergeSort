@@ -64,5 +64,6 @@ void MergeSort::mergeSort(std::vector<int>& arr, int left, int right) {
     }
 }
 void MergeSort::sort(std::vector<int>& arr) {
+    // Rozpoczynamy sortowanie od ca³ej tablicy
     mergeSort(arr, 0, arr.size() - 1);
 }
