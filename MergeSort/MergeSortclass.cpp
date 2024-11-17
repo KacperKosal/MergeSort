@@ -63,3 +63,6 @@ void MergeSort::mergeSort(std::vector<int>& arr, int left, int right) {
         merge(arr, left, right);
     }
 }
+void MergeSort::sort(std::vector<int>& arr) {
+    mergeSort(arr, 0, arr.size() - 1);
+}
