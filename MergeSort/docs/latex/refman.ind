@@ -1,0 +1,67 @@
+\begin{theindex}
+
+  \item {Lista testów}, \hyperpage{1}
+
+  \indexspace
+
+  \item {main}
+    \subitem {MergeSort.cpp}, \hyperpage{11}
+  \item {merge}
+    \subitem {MergeSort}, \hyperpage{7}
+  \item {MergeSort}, \hyperpage{7}
+    \subitem {merge}, \hyperpage{7}
+    \subitem {mergeSort}, \hyperpage{8}
+    \subitem {sort}, \hyperpage{8}
+  \item {mergeSort}
+    \subitem {MergeSort}, \hyperpage{8}
+  \item {MergeSort.cpp}, \hyperpage{11}
+    \subitem {main}, \hyperpage{11}
+  \item {MergeSortclass.cpp}, \hyperpage{12}
+  \item {MergeStoreclass.hpp}, \hyperpage{12}
+
+  \indexspace
+
+  \item {sort}
+    \subitem {MergeSort}, \hyperpage{8}
+
+  \indexspace
+
+  \item {TEST}
+    \subitem {testdoduje.cpp}, \hyperpage{13}
+    \subitem {testduplikat.cpp}, \hyperpage{13}
+    \subitem {testjeden.cpp}, \hyperpage{14}
+    \subitem {testlosowy.cpp}, \hyperpage{15}
+    \subitem {testodwrotny.cpp}, \hyperpage{15}
+    \subitem {testpusty.cpp}, \hyperpage{16}
+    \subitem {Testsortowania.cpp}, \hyperpage{17}
+    \subitem {testujemny.cpp}, \hyperpage{17}
+    \subitem {testwiekszy.cpp}, \hyperpage{18}
+  \item {testdoduje.cpp}
+    \subitem {TEST}, \hyperpage{13}
+  \item {testduplikat.cpp}
+    \subitem {TEST}, \hyperpage{13}
+  \item {testjeden.cpp}
+    \subitem {TEST}, \hyperpage{14}
+  \item {testlosowy.cpp}
+    \subitem {TEST}, \hyperpage{15}
+  \item {testodwrotny.cpp}
+    \subitem {TEST}, \hyperpage{15}
+  \item {testpusty.cpp}
+    \subitem {TEST}, \hyperpage{16}
+  \item {Testsortowania.cpp}
+    \subitem {TEST}, \hyperpage{17}
+  \item {testujemny.cpp}
+    \subitem {TEST}, \hyperpage{17}
+  \item {testwiekszy.cpp}
+    \subitem {TEST}, \hyperpage{18}
+  \item {testy/testdoduje.cpp}, \hyperpage{12}
+  \item {testy/testduplikat.cpp}, \hyperpage{13}
+  \item {testy/testjeden.cpp}, \hyperpage{14}
+  \item {testy/testlosowy.cpp}, \hyperpage{14}
+  \item {testy/testodwrotny.cpp}, \hyperpage{15}
+  \item {testy/testpusty.cpp}, \hyperpage{16}
+  \item {testy/Testsortowania.cpp}, \hyperpage{16}
+  \item {testy/testujemny.cpp}, \hyperpage{17}
+  \item {testy/testwiekszy.cpp}, \hyperpage{18}
+
+\end{theindex}

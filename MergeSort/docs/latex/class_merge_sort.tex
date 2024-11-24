@@ -1,0 +1,134 @@
+\doxysection{Dokumentacja klasy Merge\+Sort}
+\hypertarget{class_merge_sort}{}\label{class_merge_sort}\index{MergeSort@{MergeSort}}
+
+
+Klasa implementująca algorytm sortowania przez scalanie (\doxylink{class_merge_sort}{Merge\+Sort}).  
+
+
+
+
+{\ttfamily \#include $<$Merge\+Storeclass.\+hpp$>$}
+
+\doxysubsubsection*{Statyczne metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_merge_sort_a12d377b30cac3090f792af10643890df}{sort}} (std\+::vector$<$ int $>$ \&arr)
+\begin{DoxyCompactList}\small\item\em Sortuje przekazaną tablicę za pomocą algorytmu \doxylink{class_merge_sort}{Merge\+Sort}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Statyczne metody prywatne}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_merge_sort_ac9f31032a476768ea8c70f1713e6a196}{merge}} (std\+::vector$<$ int $>$ \&arr, int left, int right)
+\begin{DoxyCompactList}\small\item\em Pomocnicza funkcja do scalenia dwóch posortowanych części tablicy. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_merge_sort_a8d815bd5ddb7e4525ca4eeb4db20ba26}{merge\+Sort}} (std\+::vector$<$ int $>$ \&arr, int left, int right)
+\begin{DoxyCompactList}\small\item\em Rekursywnie dzieli tablicę na części i sortuje je. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Klasa implementująca algorytm sortowania przez scalanie (\doxylink{class_merge_sort}{Merge\+Sort}). 
+
+Klasa ta zawiera metody do sortowania tablicy liczb całkowitych przy użyciu algorytmu \doxylink{class_merge_sort}{Merge\+Sort}. Sortowanie jest wykonywane w sposób rekurencyjny, dzieląc tablicę na części, a następnie scalając je w sposób posortowany. 
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\Hypertarget{class_merge_sort_ac9f31032a476768ea8c70f1713e6a196}\index{MergeSort@{MergeSort}!merge@{merge}}
+\index{merge@{merge}!MergeSort@{MergeSort}}
+\doxysubsubsection{\texorpdfstring{merge()}{merge()}}
+{\footnotesize\ttfamily \label{class_merge_sort_ac9f31032a476768ea8c70f1713e6a196} 
+void Merge\+Sort\+::merge (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$ \&}]{arr}{, }\item[{int}]{left}{, }\item[{int}]{right}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Pomocnicza funkcja do scalenia dwóch posortowanych części tablicy. 
+
+Łączy dwie posortowane części tablicy w jedną uporządkowaną część.
+
+Funkcja ta łączy dwie posortowane części tablicy w jedną uporządkowaną część. Jest wywoływana po podziale tablicy na mniejsze części.
+
+
+\begin{DoxyParams}{Parametry}
+{\em arr} & Tablica, która zawiera części do scalania. \\
+\hline
+{\em left} & Indeks początkowy lewej części tablicy. \\
+\hline
+{\em right} & Indeks końcowy prawej części tablicy.\\
+\hline
+\end{DoxyParams}
+Funkcja odpowiedzialna za scalanie dwóch części tablicy w jedną, posortowaną część. Działa na przekazanej tablicy, wykorzystując indeksy do określenia zakresów.
+
+
+\begin{DoxyParams}{Parametry}
+{\em arr} & Tablica liczb całkowitych do scalania. \\
+\hline
+{\em left} & Indeks początkowy zakresu do scalania. \\
+\hline
+{\em right} & Indeks końcowy zakresu do scalania. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_merge_sort_a8d815bd5ddb7e4525ca4eeb4db20ba26}\index{MergeSort@{MergeSort}!mergeSort@{mergeSort}}
+\index{mergeSort@{mergeSort}!MergeSort@{MergeSort}}
+\doxysubsubsection{\texorpdfstring{mergeSort()}{mergeSort()}}
+{\footnotesize\ttfamily \label{class_merge_sort_a8d815bd5ddb7e4525ca4eeb4db20ba26} 
+void Merge\+Sort\+::merge\+Sort (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$ \&}]{arr}{, }\item[{int}]{left}{, }\item[{int}]{right}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Rekursywnie dzieli tablicę na części i sortuje je. 
+
+Rekurencyjnie dzieli tablicę na części i sortuje je.
+
+Funkcja ta dzieli tablicę na mniejsze części, aż do momentu, gdy każda część będzie zawierać tylko jeden element. Następnie wywołuje funkcję \doxylink{class_merge_sort_ac9f31032a476768ea8c70f1713e6a196}{merge}, aby połączyć posortowane części.
+
+
+\begin{DoxyParams}{Parametry}
+{\em arr} & Tablica do posortowania. \\
+\hline
+{\em left} & Indeks początkowy aktualnej części tablicy. \\
+\hline
+{\em right} & Indeks końcowy aktualnej części tablicy.\\
+\hline
+\end{DoxyParams}
+Funkcja dzieli tablicę na coraz mniejsze części (podtablice), aż każda będzie zawierała pojedynczy element. Następnie scala je, tworząc uporządkowaną tablicę.
+
+
+\begin{DoxyParams}{Parametry}
+{\em arr} & Tablica liczb całkowitych do posortowania. \\
+\hline
+{\em left} & Indeks początkowy aktualnego zakresu. \\
+\hline
+{\em right} & Indeks końcowy aktualnego zakresu. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_merge_sort_a12d377b30cac3090f792af10643890df}\index{MergeSort@{MergeSort}!sort@{sort}}
+\index{sort@{sort}!MergeSort@{MergeSort}}
+\doxysubsubsection{\texorpdfstring{sort()}{sort()}}
+{\footnotesize\ttfamily \label{class_merge_sort_a12d377b30cac3090f792af10643890df} 
+void Merge\+Sort\+::sort (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$ \&}]{arr}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sortuje przekazaną tablicę za pomocą algorytmu \doxylink{class_merge_sort}{Merge\+Sort}. 
+
+Sortuje całą tablicę liczb całkowitych.
+
+Ta metoda jest wywoływana w celu posortowania całej tablicy. Algorytm działa w sposób rekurencyjny, dzieląc tablicę na mniejsze części i scalając je w sposób uporządkowany.
+
+
+\begin{DoxyParams}{Parametry}
+{\em arr} & Tablica liczb całkowitych do posortowania. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Brak (sortowanie odbywa się w miejscu na oryginalnej tablicy).
+\end{DoxyReturn}
+Funkcja jest punktem wejścia do sortowania całej tablicy. Wywołuje rekurencyjną metodę {\ttfamily merge\+Sort}, która dzieli tablicę na mniejsze części i je sortuje.
+
+
+\begin{DoxyParams}{Parametry}
+{\em arr} & Tablica liczb całkowitych do posortowania. \\
+\hline
+\end{DoxyParams}
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_merge_storeclass_8hpp}{Merge\+Storeclass.\+hpp}}\item 
+\mbox{\hyperlink{_merge_sortclass_8cpp}{Merge\+Sortclass.\+cpp}}\end{DoxyCompactItemize}

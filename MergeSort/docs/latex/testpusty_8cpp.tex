@@ -1,0 +1,38 @@
+\doxysection{Dokumentacja pliku testy/testpusty.cpp}
+\hypertarget{testpusty_8cpp}{}\label{testpusty_8cpp}\index{testy/testpusty.cpp@{testy/testpusty.cpp}}
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$gtest/gtest.\+h$>$}\newline
+{\ttfamily \#include "{}Merge\+Storeclass.\+hpp"{}}\newline
+\doxysubsubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{testpusty_8cpp_a087bd2fb35f6d6ff4627bed20334dee6}{TEST}} (Merge\+Sort\+Tests, Empty\+Array)
+\begin{DoxyCompactList}\small\item\em Testuje działanie algorytmu \doxylink{class_merge_sort}{Merge\+Sort} na pustej tablicy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Dokumentacja funkcji}
+\Hypertarget{testpusty_8cpp_a087bd2fb35f6d6ff4627bed20334dee6}\index{testpusty.cpp@{testpusty.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!testpusty.cpp@{testpusty.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}}
+{\footnotesize\ttfamily \label{testpusty_8cpp_a087bd2fb35f6d6ff4627bed20334dee6} 
+TEST (\begin{DoxyParamCaption}\item[{Merge\+Sort\+Tests}]{}{, }\item[{Empty\+Array}]{}{}\end{DoxyParamCaption})}
+
+
+
+Testuje działanie algorytmu \doxylink{class_merge_sort}{Merge\+Sort} na pustej tablicy. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000006}{Test}}]Merge\+Sort\+Tests.\+Empty\+Array \end{DoxyRefDesc}
+
+
+Test sprawdza, czy algorytm prawidłowo obsługuje przypadek pustej tablicy. W przypadku pustej tablicy algorytm nie powinien wprowadzać żadnych zmian, a wynikowa tablica powinna pozostać pusta.
+
+
+\begin{DoxyItemize}
+\item Wejście\+: Pusta tablica \{\}.
+\item Oczekiwane wyjście\+: Pusta tablica \{\}. 
+\end{DoxyItemize}\texorpdfstring{$<$}{<} Pusta tablica wejściowa.
+
+\texorpdfstring{$<$}{<} Wywołanie algorytmu \doxylink{class_merge_sort}{Merge\+Sort}.
+
+\texorpdfstring{$<$}{<} Sprawdzenie, czy wynik jest pustą tablicą.

@@ -1,0 +1,38 @@
+\doxysection{Dokumentacja pliku testy/testwiekszy.cpp}
+\hypertarget{testwiekszy_8cpp}{}\label{testwiekszy_8cpp}\index{testy/testwiekszy.cpp@{testy/testwiekszy.cpp}}
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$gtest/gtest.\+h$>$}\newline
+{\ttfamily \#include "{}Merge\+Storeclass.\+hpp"{}}\newline
+\doxysubsubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{testwiekszy_8cpp_ab560655c7724de98bc956634942da06e}{TEST}} (Merge\+Sort\+Tests, Large\+Array)
+\begin{DoxyCompactList}\small\item\em Testuje działanie algorytmu \doxylink{class_merge_sort}{Merge\+Sort} na większej tablicy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Dokumentacja funkcji}
+\Hypertarget{testwiekszy_8cpp_ab560655c7724de98bc956634942da06e}\index{testwiekszy.cpp@{testwiekszy.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!testwiekszy.cpp@{testwiekszy.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}}
+{\footnotesize\ttfamily \label{testwiekszy_8cpp_ab560655c7724de98bc956634942da06e} 
+TEST (\begin{DoxyParamCaption}\item[{Merge\+Sort\+Tests}]{}{, }\item[{Large\+Array}]{}{}\end{DoxyParamCaption})}
+
+
+
+Testuje działanie algorytmu \doxylink{class_merge_sort}{Merge\+Sort} na większej tablicy. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000009}{Test}}]Merge\+Sort\+Tests.\+Large\+Array \end{DoxyRefDesc}
+
+
+Test sprawdza, czy algorytm prawidłowo sortuje większą tablicę z różnymi liczbami. Po posortowaniu elementy powinny być uporządkowane rosnąco.
+
+
+\begin{DoxyItemize}
+\item Wejście\+: Tablica \{100, 30, 10, 90, 60, 50, 20, 80, 70, 40\}.
+\item Oczekiwane wyjście\+: Tablica posortowana w porządku rosnącym \{10, 20, 30, 40, 50, 60, 70, 80, 90, 100\}. 
+\end{DoxyItemize}\texorpdfstring{$<$}{<} Tablica wejściowa z większymi liczbami.
+
+\texorpdfstring{$<$}{<} Wywołanie algorytmu \doxylink{class_merge_sort}{Merge\+Sort}.
+
+\texorpdfstring{$<$}{<} Sprawdzenie, czy tablica jest posortowana.

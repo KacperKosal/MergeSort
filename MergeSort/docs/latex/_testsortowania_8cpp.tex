@@ -1,0 +1,38 @@
+\doxysection{Dokumentacja pliku testy/\+Testsortowania.cpp}
+\hypertarget{_testsortowania_8cpp}{}\label{_testsortowania_8cpp}\index{testy/Testsortowania.cpp@{testy/Testsortowania.cpp}}
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$gtest/gtest.\+h$>$}\newline
+{\ttfamily \#include "{}Merge\+Storeclass.\+hpp"{}}\newline
+\doxysubsubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_testsortowania_8cpp_a5d4488dd95ea7ba5098c810cb3176d0e}{TEST}} (Merge\+Sort\+Tests, Sorted\+Array)
+\begin{DoxyCompactList}\small\item\em Testuje działanie algorytmu \doxylink{class_merge_sort}{Merge\+Sort} na już posortowanej tablicy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Dokumentacja funkcji}
+\Hypertarget{_testsortowania_8cpp_a5d4488dd95ea7ba5098c810cb3176d0e}\index{Testsortowania.cpp@{Testsortowania.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!Testsortowania.cpp@{Testsortowania.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}}
+{\footnotesize\ttfamily \label{_testsortowania_8cpp_a5d4488dd95ea7ba5098c810cb3176d0e} 
+TEST (\begin{DoxyParamCaption}\item[{Merge\+Sort\+Tests}]{}{, }\item[{Sorted\+Array}]{}{}\end{DoxyParamCaption})}
+
+
+
+Testuje działanie algorytmu \doxylink{class_merge_sort}{Merge\+Sort} na już posortowanej tablicy. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000007}{Test}}]Merge\+Sort\+Tests.\+Sorted\+Array \end{DoxyRefDesc}
+
+
+Test sprawdza, czy algorytm prawidłowo obsługuje przypadek tablicy, która jest już posortowana. W takim przypadku algorytm nie powinien wprowadzać żadnych zmian w tablicy.
+
+
+\begin{DoxyItemize}
+\item Wejście\+: Tablica już posortowana \{1, 2, 3, 4, 5\}.
+\item Oczekiwane wyjście\+: Tablica pozostaje bez zmian \{1, 2, 3, 4, 5\}. 
+\end{DoxyItemize}\texorpdfstring{$<$}{<} Już posortowana tablica wejściowa.
+
+\texorpdfstring{$<$}{<} Wywołanie algorytmu \doxylink{class_merge_sort}{Merge\+Sort}.
+
+\texorpdfstring{$<$}{<} Sprawdzenie, czy wynik jest taki sam jak wejście.

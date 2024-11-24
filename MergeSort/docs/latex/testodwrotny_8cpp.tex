@@ -1,0 +1,38 @@
+\doxysection{Dokumentacja pliku testy/testodwrotny.cpp}
+\hypertarget{testodwrotny_8cpp}{}\label{testodwrotny_8cpp}\index{testy/testodwrotny.cpp@{testy/testodwrotny.cpp}}
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$gtest/gtest.\+h$>$}\newline
+{\ttfamily \#include "{}Merge\+Storeclass.\+hpp"{}}\newline
+\doxysubsubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{testodwrotny_8cpp_a6e0994f44ed4eabb5aba7b552f24372c}{TEST}} (Merge\+Sort\+Tests, Reversed\+Array)
+\begin{DoxyCompactList}\small\item\em Testuje działanie algorytmu \doxylink{class_merge_sort}{Merge\+Sort} na tablicy w odwrotnej kolejności. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Dokumentacja funkcji}
+\Hypertarget{testodwrotny_8cpp_a6e0994f44ed4eabb5aba7b552f24372c}\index{testodwrotny.cpp@{testodwrotny.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!testodwrotny.cpp@{testodwrotny.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}}
+{\footnotesize\ttfamily \label{testodwrotny_8cpp_a6e0994f44ed4eabb5aba7b552f24372c} 
+TEST (\begin{DoxyParamCaption}\item[{Merge\+Sort\+Tests}]{}{, }\item[{Reversed\+Array}]{}{}\end{DoxyParamCaption})}
+
+
+
+Testuje działanie algorytmu \doxylink{class_merge_sort}{Merge\+Sort} na tablicy w odwrotnej kolejności. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000005}{Test}}]Merge\+Sort\+Tests.\+Reversed\+Array \end{DoxyRefDesc}
+
+
+Test sprawdza, czy algorytm prawidłowo sortuje tablicę, w której elementy są uporządkowane w porządku malejącym. Po sortowaniu elementy w tablicy powinny być uporządkowane rosnąco.
+
+
+\begin{DoxyItemize}
+\item Wejście\+: Tablica \{5, 4, 3, 2, 1\}.
+\item Oczekiwane wyjście\+: Tablica \{1, 2, 3, 4, 5\}. 
+\end{DoxyItemize}\texorpdfstring{$<$}{<} Tablica wejściowa z elementami w odwrotnej kolejności.
+
+\texorpdfstring{$<$}{<} Wywołanie algorytmu \doxylink{class_merge_sort}{Merge\+Sort}.
+
+\texorpdfstring{$<$}{<} Sprawdzenie, czy wynik jest zgodny z oczekiwaniami.

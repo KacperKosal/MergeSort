@@ -1,0 +1,38 @@
+\doxysection{Dokumentacja pliku testy/testduplikat.cpp}
+\hypertarget{testduplikat_8cpp}{}\label{testduplikat_8cpp}\index{testy/testduplikat.cpp@{testy/testduplikat.cpp}}
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$gtest/gtest.\+h$>$}\newline
+{\ttfamily \#include "{}Merge\+Storeclass.\+hpp"{}}\newline
+\doxysubsubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{testduplikat_8cpp_a49ca750662b44d9a46523f7e91d97d20}{TEST}} (Merge\+Sort\+Tests, Duplicates\+Array)
+\begin{DoxyCompactList}\small\item\em Testuje działanie algorytmu \doxylink{class_merge_sort}{Merge\+Sort} dla tablicy zawierającej duplikaty elementów. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Dokumentacja funkcji}
+\Hypertarget{testduplikat_8cpp_a49ca750662b44d9a46523f7e91d97d20}\index{testduplikat.cpp@{testduplikat.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!testduplikat.cpp@{testduplikat.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}}
+{\footnotesize\ttfamily \label{testduplikat_8cpp_a49ca750662b44d9a46523f7e91d97d20} 
+TEST (\begin{DoxyParamCaption}\item[{Merge\+Sort\+Tests}]{}{, }\item[{Duplicates\+Array}]{}{}\end{DoxyParamCaption})}
+
+
+
+Testuje działanie algorytmu \doxylink{class_merge_sort}{Merge\+Sort} dla tablicy zawierającej duplikaty elementów. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000002}{Test}}]Merge\+Sort\+Tests.\+Duplicates\+Array \end{DoxyRefDesc}
+
+
+Test weryfikuje, czy algorytm sortowania poprawnie obsługuje tablicę, w której znajdują się powtarzające się wartości, sortując je w porządku rosnącym.
+
+
+\begin{DoxyItemize}
+\item Wejście\+: Tablica \{3, 3, 1, 2, 2\}.
+\item Oczekiwane wyjście\+: Tablica \{1, 2, 2, 3, 3\}. 
+\end{DoxyItemize}\texorpdfstring{$<$}{<} Tablica wejściowa zawierająca duplikaty.
+
+\texorpdfstring{$<$}{<} Wywołanie algorytmu \doxylink{class_merge_sort}{Merge\+Sort}.
+
+\texorpdfstring{$<$}{<} Sprawdzenie, czy wynik jest zgodny z oczekiwaniami.

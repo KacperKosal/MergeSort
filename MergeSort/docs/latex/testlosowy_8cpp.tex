@@ -1,0 +1,38 @@
+\doxysection{Dokumentacja pliku testy/testlosowy.cpp}
+\hypertarget{testlosowy_8cpp}{}\label{testlosowy_8cpp}\index{testy/testlosowy.cpp@{testy/testlosowy.cpp}}
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$gtest/gtest.\+h$>$}\newline
+{\ttfamily \#include "{}Merge\+Storeclass.\+hpp"{}}\newline
+\doxysubsubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{testlosowy_8cpp_ae634a5443c1651532461b0ebe4380d61}{TEST}} (Merge\+Sort\+Tests, Random\+Array)
+\begin{DoxyCompactList}\small\item\em Testuje działanie algorytmu \doxylink{class_merge_sort}{Merge\+Sort} na tablicy o losowej kolejności elementów. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Dokumentacja funkcji}
+\Hypertarget{testlosowy_8cpp_ae634a5443c1651532461b0ebe4380d61}\index{testlosowy.cpp@{testlosowy.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!testlosowy.cpp@{testlosowy.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}}
+{\footnotesize\ttfamily \label{testlosowy_8cpp_ae634a5443c1651532461b0ebe4380d61} 
+TEST (\begin{DoxyParamCaption}\item[{Merge\+Sort\+Tests}]{}{, }\item[{Random\+Array}]{}{}\end{DoxyParamCaption})}
+
+
+
+Testuje działanie algorytmu \doxylink{class_merge_sort}{Merge\+Sort} na tablicy o losowej kolejności elementów. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000004}{Test}}]Merge\+Sort\+Tests.\+Random\+Array \end{DoxyRefDesc}
+
+
+Test weryfikuje, czy algorytm poprawnie sortuje tablicę zawierającą elementy w przypadkowej kolejności. Oczekiwanym wynikiem jest posortowana tablica w porządku rosnącym.
+
+
+\begin{DoxyItemize}
+\item Wejście\+: Tablica \{38, 27, 43, 3, 9, 82, 10\}.
+\item Oczekiwane wyjście\+: Tablica \{3, 9, 10, 27, 38, 43, 82\}. 
+\end{DoxyItemize}\texorpdfstring{$<$}{<} Tablica wejściowa z losową kolejnością elementów.
+
+\texorpdfstring{$<$}{<} Wywołanie algorytmu \doxylink{class_merge_sort}{Merge\+Sort}.
+
+\texorpdfstring{$<$}{<} Weryfikacja wyniku sortowania.

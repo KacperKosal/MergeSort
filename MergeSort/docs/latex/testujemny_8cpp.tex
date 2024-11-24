@@ -1,0 +1,38 @@
+\doxysection{Dokumentacja pliku testy/testujemny.cpp}
+\hypertarget{testujemny_8cpp}{}\label{testujemny_8cpp}\index{testy/testujemny.cpp@{testy/testujemny.cpp}}
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$gtest/gtest.\+h$>$}\newline
+{\ttfamily \#include "{}Merge\+Storeclass.\+hpp"{}}\newline
+\doxysubsubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{testujemny_8cpp_a90d1421780f84a8c9aa05c7c8207d79e}{TEST}} (Merge\+Sort\+Tests, Negative\+Numbers)
+\begin{DoxyCompactList}\small\item\em Testuje działanie algorytmu \doxylink{class_merge_sort}{Merge\+Sort} na tablicy zawierającej liczby ujemne. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Dokumentacja funkcji}
+\Hypertarget{testujemny_8cpp_a90d1421780f84a8c9aa05c7c8207d79e}\index{testujemny.cpp@{testujemny.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!testujemny.cpp@{testujemny.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}}
+{\footnotesize\ttfamily \label{testujemny_8cpp_a90d1421780f84a8c9aa05c7c8207d79e} 
+TEST (\begin{DoxyParamCaption}\item[{Merge\+Sort\+Tests}]{}{, }\item[{Negative\+Numbers}]{}{}\end{DoxyParamCaption})}
+
+
+
+Testuje działanie algorytmu \doxylink{class_merge_sort}{Merge\+Sort} na tablicy zawierającej liczby ujemne. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000008}{Test}}]Merge\+Sort\+Tests.\+Negative\+Numbers \end{DoxyRefDesc}
+
+
+Test sprawdza, czy algorytm prawidłowo sortuje tablicę zawierającą liczby ujemne. Po posortowaniu liczby powinny być uporządkowane rosnąco.
+
+
+\begin{DoxyItemize}
+\item Wejście\+: Tablica zawierająca liczby ujemne \{-\/1, -\/5, -\/3, -\/2, -\/4\}.
+\item Oczekiwane wyjście\+: Tablica posortowana w porządku rosnącym \{-\/5, -\/4, -\/3, -\/2, -\/1\}. 
+\end{DoxyItemize}\texorpdfstring{$<$}{<} Tablica wejściowa z liczbami ujemnymi.
+
+\texorpdfstring{$<$}{<} Wywołanie algorytmu \doxylink{class_merge_sort}{Merge\+Sort}.
+
+\texorpdfstring{$<$}{<} Sprawdzenie, czy tablica jest posortowana.

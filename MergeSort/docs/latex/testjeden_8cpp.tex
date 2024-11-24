@@ -1,0 +1,38 @@
+\doxysection{Dokumentacja pliku testy/testjeden.cpp}
+\hypertarget{testjeden_8cpp}{}\label{testjeden_8cpp}\index{testy/testjeden.cpp@{testy/testjeden.cpp}}
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$gtest/gtest.\+h$>$}\newline
+{\ttfamily \#include "{}Merge\+Storeclass.\+hpp"{}}\newline
+\doxysubsubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{testjeden_8cpp_a8f5b91e8385d5e5507ccd5566077ce4f}{TEST}} (Merge\+Sort\+Tests, Single\+Element\+Array)
+\begin{DoxyCompactList}\small\item\em Testuje działanie algorytmu \doxylink{class_merge_sort}{Merge\+Sort} na tablicy zawierającej jeden element. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Dokumentacja funkcji}
+\Hypertarget{testjeden_8cpp_a8f5b91e8385d5e5507ccd5566077ce4f}\index{testjeden.cpp@{testjeden.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!testjeden.cpp@{testjeden.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}}
+{\footnotesize\ttfamily \label{testjeden_8cpp_a8f5b91e8385d5e5507ccd5566077ce4f} 
+TEST (\begin{DoxyParamCaption}\item[{Merge\+Sort\+Tests}]{}{, }\item[{Single\+Element\+Array}]{}{}\end{DoxyParamCaption})}
+
+
+
+Testuje działanie algorytmu \doxylink{class_merge_sort}{Merge\+Sort} na tablicy zawierającej jeden element. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000003}{Test}}]Merge\+Sort\+Tests.\+Single\+Element\+Array \end{DoxyRefDesc}
+
+
+Test weryfikuje, czy algorytm poprawnie obsługuje przypadek, w którym tablica wejściowa zawiera tylko jeden element. W takim przypadku tablica powinna pozostać bez zmian.
+
+
+\begin{DoxyItemize}
+\item Wejście\+: Tablica \{42\}.
+\item Oczekiwane wyjście\+: Tablica \{42\}. 
+\end{DoxyItemize}\texorpdfstring{$<$}{<} Tablica wejściowa zawierająca jeden element.
+
+\texorpdfstring{$<$}{<} Wywołanie algorytmu \doxylink{class_merge_sort}{Merge\+Sort}.
+
+\texorpdfstring{$<$}{<} Sprawdzenie, czy wynik jest zgodny z oczekiwaniami.
