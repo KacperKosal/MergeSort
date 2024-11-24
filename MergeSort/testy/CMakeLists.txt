@@ -20,6 +20,7 @@ add_executable(testy Testsortowania.cpp
         testdoduje.cpp
         testpusty.cpp
         testjeden.cpp
+        testduplikat.cpp
 
 )
 
