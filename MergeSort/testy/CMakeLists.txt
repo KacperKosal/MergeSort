@@ -16,6 +16,7 @@ endif()
 add_executable(testy Testsortowania.cpp
         testodwrotny.cpp
         testlosowy.cpp
+        testujemny.cpp
 
 )
 
