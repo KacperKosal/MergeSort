@@ -1,0 +1,5 @@
+if(EXISTS "C:/Users/kacpe/CLionProjects/cmake-build-debug/MergeSort/testy/testy[1]_tests.cmake")
+  include("C:/Users/kacpe/CLionProjects/cmake-build-debug/MergeSort/testy/testy[1]_tests.cmake")
+else()
+  add_test(testy_NOT_BUILT testy_NOT_BUILT)
+endif()

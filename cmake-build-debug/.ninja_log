@@ -1,0 +1,16 @@
+# ninja log v6
+8	182	7541805359757769	CMakeFiles/CLionProjects.dir/MergeSort/MergeSortclass.cpp.obj	8152139415e604ff
+4	374	7541805359706141	CMakeFiles/CLionProjects.dir/MergeSort/MergeSort.cpp.obj	68934b70fdf44fa
+375	494	7541805363418363	CLionProjects.exe	ea61e419c09bd69f
+10	229	7541815685836807	CMakeFiles/Sortowanie.dir/MergeSort/MergeSortclass.cpp.obj	db0460cb2a3cd4b2
+18	1073	7541815685915014	_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	34ef3df2b4a5c756
+26	1155	7541815685999658	MergeSort/testy/CMakeFiles/testy.dir/Testsortowania.cpp.obj	76d26a906a2d33a7
+30	1296	7541815686039994	_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj	4b74bb6f01abbca1
+14	2443	7541815685879714	_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj	162db2dc745030a2
+6	6405	7541815685791738	_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	dab0b12820d043d8
+14	77	7541815750700604	libSortowanie.a	5453c0abf91ace9b
+8	2659	7541815750635858	lib/libgtest.a	419b6887c33b1fb0
+2659	2711	7541815777153284	lib/libgtest_main.a	2f275d039c87d6b6
+2711	5425	7541815804750934	MergeSort/testy/testy.exe	9bbedbaa8daf04e8
+2711	5425	7541815804750934	MergeSort/testy/testy[1]_tests.cmake	9bbedbaa8daf04e8
+2711	5425	7541815804750934	C:/Users/kacpe/CLionProjects/cmake-build-debug/MergeSort/testy/testy[1]_tests.cmake	9bbedbaa8daf04e8
