@@ -37,7 +37,7 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 25,
+				"line" : 26,
 				"parent" : 0
 			},
 			{
@@ -106,7 +106,8 @@
 				2,
 				3,
 				4,
-				5
+				5,
+				6
 			]
 		}
 	],
@@ -178,7 +179,8 @@
 				2,
 				3,
 				4,
-				5
+				5,
+				6
 			]
 		}
 	],
@@ -218,6 +220,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "MergeSort/testy/testpusty.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "MergeSort/testy/testjeden.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],
