@@ -14,6 +14,7 @@ if (CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang|AppleClang")
 endif()
 
 add_executable(testy Testsortowania.cpp
+        testodwrotny.cpp
 )
 
 target_link_libraries(testy PRIVATE Sortowanie GTest::gtest_main)

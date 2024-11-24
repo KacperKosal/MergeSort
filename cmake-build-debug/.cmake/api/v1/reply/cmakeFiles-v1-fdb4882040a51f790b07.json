@@ -204,30 +204,6 @@
 			"path" : "C:/Program Files/JetBrains/CLion 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/ExternalProject/stepscript.cmake.in"
 		},
 		{
-			"isGenerated" : true,
-			"path" : "cmake-build-debug/CMakeFiles/fc-tmp/googletest/download.cmake"
-		},
-		{
-			"isGenerated" : true,
-			"path" : "cmake-build-debug/CMakeFiles/fc-stamp/googletest/download-googletest.cmake"
-		},
-		{
-			"isGenerated" : true,
-			"path" : "cmake-build-debug/CMakeFiles/fc-stamp/googletest/verify-googletest.cmake"
-		},
-		{
-			"isGenerated" : true,
-			"path" : "cmake-build-debug/CMakeFiles/fc-stamp/googletest/extract-googletest.cmake"
-		},
-		{
-			"isGenerated" : true,
-			"path" : "cmake-build-debug/CMakeFiles/fc-tmp/googletest/update.cmake"
-		},
-		{
-			"isGenerated" : true,
-			"path" : "cmake-build-debug/CMakeFiles/fc-tmp/googletest/patch.cmake"
-		},
-		{
 			"isCMake" : true,
 			"isExternal" : true,
 			"path" : "C:/Program Files/JetBrains/CLion 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/GoogleTest.cmake"
