@@ -225,6 +225,13 @@ build MergeSort/testy/CMakeFiles/testy.dir/testodwrotny.cpp.obj: CXX_COMPILER__t
   OBJECT_DIR = MergeSort\testy\CMakeFiles\testy.dir
   OBJECT_FILE_DIR = MergeSort\testy\CMakeFiles\testy.dir
 
+build MergeSort/testy/CMakeFiles/testy.dir/testlosowy.cpp.obj: CXX_COMPILER__testy_unscanned_Debug C$:/Users/kacpe/CLionProjects/MergeSort/testy/testlosowy.cpp || cmake_object_order_depends_target_testy
+  DEP_FILE = MergeSort\testy\CMakeFiles\testy.dir\testlosowy.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/kacpe/CLionProjects/MergeSort -IC:/Users/kacpe/CLionProjects/Headers -isystem C:/Users/kacpe/CLionProjects/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/kacpe/CLionProjects/cmake-build-debug/_deps/googletest-src/googletest
+  OBJECT_DIR = MergeSort\testy\CMakeFiles\testy.dir
+  OBJECT_FILE_DIR = MergeSort\testy\CMakeFiles\testy.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target testy
@@ -233,7 +240,7 @@ build MergeSort/testy/CMakeFiles/testy.dir/testodwrotny.cpp.obj: CXX_COMPILER__t
 #############################################
 # Link the executable MergeSort\testy\testy.exe
 
-build MergeSort/testy/testy.exe MergeSort/testy/testy[1]_tests.cmake | ${cmake_ninja_workdir}MergeSort/testy/testy[1]_tests.cmake: CXX_EXECUTABLE_LINKER__testy_Debug MergeSort/testy/CMakeFiles/testy.dir/Testsortowania.cpp.obj MergeSort/testy/CMakeFiles/testy.dir/testodwrotny.cpp.obj | libSortowanie.a lib/libgtest_main.a lib/libgtest.a || libSortowanie.a lib/libgtest.a lib/libgtest_main.a
+build MergeSort/testy/testy.exe MergeSort/testy/testy[1]_tests.cmake | ${cmake_ninja_workdir}MergeSort/testy/testy[1]_tests.cmake: CXX_EXECUTABLE_LINKER__testy_Debug MergeSort/testy/CMakeFiles/testy.dir/Testsortowania.cpp.obj MergeSort/testy/CMakeFiles/testy.dir/testodwrotny.cpp.obj MergeSort/testy/CMakeFiles/testy.dir/testlosowy.cpp.obj | libSortowanie.a lib/libgtest_main.a lib/libgtest.a || libSortowanie.a lib/libgtest.a lib/libgtest_main.a
   FLAGS = -g
   LINK_LIBRARIES = libSortowanie.a  lib/libgtest_main.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = MergeSort\testy\CMakeFiles\testy.dir

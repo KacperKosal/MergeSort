@@ -15,6 +15,8 @@ endif()
 
 add_executable(testy Testsortowania.cpp
         testodwrotny.cpp
+        testlosowy.cpp
+
 )
 
 target_link_libraries(testy PRIVATE Sortowanie GTest::gtest_main)
