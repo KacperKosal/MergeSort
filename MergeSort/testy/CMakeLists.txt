@@ -18,6 +18,7 @@ add_executable(testy Testsortowania.cpp
         testlosowy.cpp
         testujemny.cpp
         testdoduje.cpp
+        testpusty.cpp
 
 )
 
