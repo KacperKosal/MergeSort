@@ -21,6 +21,7 @@ add_executable(testy Testsortowania.cpp
         testpusty.cpp
         testjeden.cpp
         testduplikat.cpp
+        testwiekszy.cpp
 
 )
 
