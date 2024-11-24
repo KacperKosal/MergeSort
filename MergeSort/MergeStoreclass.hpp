@@ -2,50 +2,50 @@
 
 /**
  * \class MergeSort
- * \brief Klasa implementuj¹ca algorytm sortowania przez scalanie (MergeSort).
+ * \brief Klasa implementujÄ…ca algorytm sortowania przez scalanie (MergeSort).
  *
- * Klasa ta zawiera metody do sortowania tablicy liczb ca³kowitych przy
- * u¿yciu algorytmu MergeSort. Sortowanie jest wykonywane w sposób
- * rekurencyjny, dziel¹c tablicê na czêœci, a nastêpnie scalaj¹c je w
- * sposób posortowany.
+ * Klasa ta zawiera metody do sortowania tablicy liczb caÅ‚kowitych przy
+ * uÅ¼yciu algorytmu MergeSort. Sortowanie jest wykonywane w sposÃ³b
+ * rekurencyjny, dzielÄ…c tablicÄ™ na czÄ™Å›ci, a nastÄ™pnie scalajÄ…c je w
+ * sposÃ³b posortowany.
  */
 class MergeSort {
 public:
     /**
-     * \brief Sortuje przekazan¹ tablicê za pomoc¹ algorytmu MergeSort.
+     * \brief Sortuje przekazanÄ… tablicÄ™ za pomocÄ… algorytmu MergeSort.
      *
-     * Ta metoda jest wywo³ywana w celu posortowania ca³ej tablicy. Algorytm
-     * dzia³a w sposób rekurencyjny, dziel¹c tablicê na mniejsze czêœci i
-     * scalaj¹c je w sposób uporz¹dkowany.
+     * Ta metoda jest wywoÅ‚ywana w celu posortowania caÅ‚ej tablicy. Algorytm
+     * dziaÅ‚a w sposÃ³b rekurencyjny, dzielÄ…c tablicÄ™ na mniejsze czÄ™Å›ci i
+     * scalajÄ…c je w sposÃ³b uporzÄ…dkowany.
      *
-     * \param arr Tablica liczb ca³kowitych do posortowania.
-     * \return Brak (sortowanie odbywa siê w miejscu na oryginalnej tablicy).
+     * \param arr Tablica liczb caÅ‚kowitych do posortowania.
+     * \return Brak (sortowanie odbywa siÄ™ w miejscu na oryginalnej tablicy).
      */
     static void sort(std::vector<int>& arr);
 
 private:
     /**
-     * \brief Pomocnicza funkcja do scalenia dwóch posortowanych czêœci tablicy.
+     * \brief Pomocnicza funkcja do scalenia dwÃ³ch posortowanych czÄ™Å›ci tablicy.
      *
-     * Funkcja ta ³¹czy dwie posortowane czêœci tablicy w jedn¹ uporz¹dkowan¹
-     * czêœæ. Jest wywo³ywana po podziale tablicy na mniejsze czêœci.
+     * Funkcja ta Å‚Ä…czy dwie posortowane czÄ™Å›ci tablicy w jednÄ… uporzÄ…dkowanÄ…
+     * czÄ™Å›Ä‡. Jest wywoÅ‚ywana po podziale tablicy na mniejsze czÄ™Å›ci.
      *
-     * \param arr Tablica, która zawiera czêœci do scalania.
-     * \param left Indeks pocz¹tkowy lewej czêœci tablicy.
-     * \param right Indeks koñcowy prawej czêœci tablicy.
+     * \param arr Tablica, ktÃ³ra zawiera czÄ™Å›ci do scalania.
+     * \param left Indeks poczÄ…tkowy lewej czÄ™Å›ci tablicy.
+     * \param right Indeks koÅ„cowy prawej czÄ™Å›ci tablicy.
      */
     static void merge(std::vector<int>& arr, int left, int right);
 
     /**
-     * \brief Rekursywnie dzieli tablicê na czêœci i sortuje je.
+     * \brief Rekursywnie dzieli tablicÄ™ na czÄ™Å›ci i sortuje je.
      *
-     * Funkcja ta dzieli tablicê na mniejsze czêœci, a¿ do momentu, gdy ka¿da
-     * czêœæ bêdzie zawieraæ tylko jeden element. Nastêpnie wywo³uje funkcjê
-     * \ref merge, aby po³¹czyæ posortowane czêœci.
+     * Funkcja ta dzieli tablicÄ™ na mniejsze czÄ™Å›ci, aÅ¼ do momentu, gdy kaÅ¼da
+     * czÄ™Å›Ä‡ bÄ™dzie zawieraÄ‡ tylko jeden element. NastÄ™pnie wywoÅ‚uje funkcjÄ™
+     * \ref merge, aby poÅ‚Ä…czyÄ‡ posortowane czÄ™Å›ci.
      *
      * \param arr Tablica do posortowania.
-     * \param left Indeks pocz¹tkowy aktualnej czêœci tablicy.
-     * \param right Indeks koñcowy aktualnej czêœci tablicy.
+     * \param left Indeks poczÄ…tkowy aktualnej czÄ™Å›ci tablicy.
+     * \param right Indeks koÅ„cowy aktualnej czÄ™Å›ci tablicy.
      */
     static void mergeSort(std::vector<int>& arr, int left, int right);
 };

@@ -129,9 +129,21 @@
   <ItemGroup>
     <ClCompile Include="MergeSort.cpp" />
     <ClCompile Include="MergeSortclass.cpp" />
+    <ClCompile Include="testy\testdoduje.cpp" />
+    <ClCompile Include="testy\testduplikat.cpp" />
+    <ClCompile Include="testy\testjeden.cpp" />
+    <ClCompile Include="testy\testlosowy.cpp" />
+    <ClCompile Include="testy\testodwrotny.cpp" />
+    <ClCompile Include="testy\testpusty.cpp" />
+    <ClCompile Include="testy\Testsortowania.cpp" />
+    <ClCompile Include="testy\testujemny.cpp" />
+    <ClCompile Include="testy\testwiekszy.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MergeStoreclass.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="testy\CMakeLists.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

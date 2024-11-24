@@ -1,69 +1,91 @@
 #include "MergeStoreclass.hpp"
 
+/**
+ * @file MergeStoreclass.cpp
+ * @brief Implementacja algorytmu sortowania przez scalanie (MergeSort).
+ */
+
+ /**
+  * @brief ÅÄ…czy dwie posortowane czÄ™Å›ci tablicy w jednÄ… uporzÄ…dkowanÄ… czÄ™Å›Ä‡.
+  *
+  * Funkcja odpowiedzialna za scalanie dwÃ³ch czÄ™Å›ci tablicy w jednÄ…, posortowanÄ… czÄ™Å›Ä‡.
+  * DziaÅ‚a na przekazanej tablicy, wykorzystujÄ…c indeksy do okreÅ›lenia zakresÃ³w.
+  *
+  * @param arr Tablica liczb caÅ‚kowitych do scalania.
+  * @param left Indeks poczÄ…tkowy zakresu do scalania.
+  * @param right Indeks koÅ„cowy zakresu do scalania.
+  */
 void MergeSort::merge(std::vector<int>& arr, int left, int right) {
-    // Sprawdzenie, czy podtablica zawiera jeden lub mniej elementów
-    // (ju¿ posortowana)
-    if (left >= right) return;
+    if (left >= right) return; // JeÅ›li zakres zawiera jeden element, jest posortowany.
 
-    // Obliczenie indeksu œrodkowego podtablicy
-    int mid = left + (right - left) / 2;
+    int mid = left + (right - left) / 2; // Obliczenie punktu Å›rodkowego.
 
-    // Rekurencyjne wywo³anie na lewej po³owie tablicy
+    // Rekurencyjne sortowanie lewej i prawej czÄ™Å›ci tablicy.
     mergeSort(arr, left, mid);
-
-    // Rekurencyjne wywo³anie na prawej po³owie tablicy
     mergeSort(arr, mid + 1, right);
 
-    // Tworzenie tymczasowej tablicy do przechowywania posortowanych elementów
+    // Tworzenie tymczasowej tablicy na scalone elementy.
     std::vector<int> temp(right - left + 1);
-
-    // Indeksy do œledzenia pozycji w lewej (i), prawej (j) po³owie oraz w tablicy temp (k)
     int i = left, j = mid + 1, k = 0;
 
-    // Scalanie elementów z obu po³ówek tablicy do tablicy temp
+    // Scalanie elementÃ³w z lewej i prawej poÅ‚owy.
     while (i <= mid && j <= right) {
-        // Jeœli element w lewej po³owie jest mniejszy lub równy elementowi w prawej po³owie
         if (arr[i] <= arr[j]) {
-            temp[k++] = arr[i++];  // Wstawiamy element z lewej po³owy do temp
+            temp[k++] = arr[i++];
         }
         else {
-            temp[k++] = arr[j++];  // Wstawiamy element z prawej po³owy do temp
+            temp[k++] = arr[j++];
         }
     }
 
-    // Jeœli pozosta³y elementy w lewej po³owie (przekopiowujemy je do temp)
+    // Dodawanie pozostaÅ‚ych elementÃ³w z lewej poÅ‚owy.
     while (i <= mid) {
         temp[k++] = arr[i++];
     }
 
-    // Jeœli pozosta³y elementy w prawej po³owie (przekopiowujemy je do temp)
+    // Dodawanie pozostaÅ‚ych elementÃ³w z prawej poÅ‚owy.
     while (j <= right) {
         temp[k++] = arr[j++];
     }
 
-    // Kopiowanie posortowanych elementów z powrotem do oryginalnej tablicy arr
+    // Kopiowanie posortowanych elementÃ³w do oryginalnej tablicy.
     for (i = left, k = 0; i <= right; ++i, ++k) {
         arr[i] = temp[k];
     }
 }
+
+/**
+ * @brief Rekurencyjnie dzieli tablicÄ™ na czÄ™Å›ci i sortuje je.
+ *
+ * Funkcja dzieli tablicÄ™ na coraz mniejsze czÄ™Å›ci (podtablice),
+ * aÅ¼ kaÅ¼da bÄ™dzie zawieraÅ‚a pojedynczy element. NastÄ™pnie scala je,
+ * tworzÄ…c uporzÄ…dkowanÄ… tablicÄ™.
+ *
+ * @param arr Tablica liczb caÅ‚kowitych do posortowania.
+ * @param left Indeks poczÄ…tkowy aktualnego zakresu.
+ * @param right Indeks koÅ„cowy aktualnego zakresu.
+ */
 void MergeSort::mergeSort(std::vector<int>& arr, int left, int right) {
-    // Sprawdzamy, czy lewy indeks jest mniejszy ni¿ prawy,
-    // co oznacza, ¿e mamy do czynienia z tablic¹ o co najmniej dwóch elementach
     if (left < right) {
-        // Obliczamy punkt œrodkowy tablicy
-        int mid = left + (right - left) / 2;
+        int mid = left + (right - left) / 2; // Obliczanie punktu Å›rodkowego.
 
-        // Rekurencyjnie wywo³ujemy mergeSort na lewej po³owie tablicy
+        // Sortowanie lewej i prawej poÅ‚owy tablicy.
         mergeSort(arr, left, mid);
-
-        // Rekurencyjnie wywo³ujemy mergeSort na prawej po³owie tablicy
         mergeSort(arr, mid + 1, right);
 
-        // Po posortowaniu obu po³ówek, scalamy je w jedn¹ posortowan¹ tablicê
+        // Scalanie posortowanych czÄ™Å›ci.
         merge(arr, left, right);
     }
 }
+
+/**
+ * @brief Sortuje caÅ‚Ä… tablicÄ™ liczb caÅ‚kowitych.
+ *
+ * Funkcja jest punktem wejÅ›cia do sortowania caÅ‚ej tablicy. WywoÅ‚uje rekurencyjnÄ…
+ * metodÄ™ `mergeSort`, ktÃ³ra dzieli tablicÄ™ na mniejsze czÄ™Å›ci i je sortuje.
+ *
+ * @param arr Tablica liczb caÅ‚kowitych do posortowania.
+ */
 void MergeSort::sort(std::vector<int>& arr) {
-    // Rozpoczynamy sortowanie od ca³ej tablicy
-    mergeSort(arr, 0, arr.size() - 1);
+    mergeSort(arr, 0, arr.size() - 1); // Rozpoczyna sortowanie od caÅ‚ej tablicy.
 }
